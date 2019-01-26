@@ -1,13 +1,12 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SliderComponent } from './slider.component';
-import { SlideSelectorComponent } from '../slide-selector/slide-selector.component';
+import { SlideSelectorComponent } from './slide-selector.component';
 import { ISlide } from '../../interfaces/slide';
 import { FormsModule } from '@angular/forms';
 
-describe('SliderComponent', () => {
-  let component: SliderComponent;
-  let fixture: ComponentFixture<SliderComponent>;
+describe('SlideSelectorComponent', () => {
+  let component: SlideSelectorComponent;
+  let fixture: ComponentFixture<SlideSelectorComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
@@ -15,7 +14,6 @@ describe('SliderComponent', () => {
         FormsModule
       ],
       declarations: [
-        SliderComponent,
         SlideSelectorComponent
       ]
     })
@@ -23,11 +21,9 @@ describe('SliderComponent', () => {
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SliderComponent);
+    fixture = TestBed.createComponent(SlideSelectorComponent);
     component = fixture.componentInstance;
-    component.presentation = {
-      slides: [{} as ISlide]
-    };
+    component.slides = [{} as ISlide];
     fixture.detectChanges();
   });
 

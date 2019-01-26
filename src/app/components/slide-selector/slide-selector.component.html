@@ -1,0 +1,5 @@
+<ul class="slide-list">
+  <li *ngFor="let slide of slides; let i = index" class="slide-list__item">
+    <input type="radio" [value]="i" name="slide" [ngModel]="startIndex"> Slide {{i}}
+  </li>
+</ul>

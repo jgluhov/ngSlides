@@ -3,4 +3,9 @@
     [width]="presentation.canvas?.display_width"
     [height]="presentation.canvas?.display_height">
   </canvas>
+
+  <app-slide-selector
+    [slides]="presentation.slides"
+    (changeSlide)="handleChangeSlide($event)">
+  </app-slide-selector>
 </div>
