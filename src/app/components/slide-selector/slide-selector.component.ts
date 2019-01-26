@@ -1,4 +1,13 @@
-import { Component, OnInit, Output, EventEmitter, Input, OnChanges, SimpleChanges, OnDestroy } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  Output,
+  EventEmitter,
+  Input,
+  OnChanges,
+  SimpleChanges,
+  OnDestroy
+} from '@angular/core';
 import { ISlide } from '../../interfaces/slide';
 
 @Component({

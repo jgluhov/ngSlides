@@ -1,0 +1,7 @@
+<div class="text-container"
+  [style.top.px]="element.layout.top"
+  [style.left.px]="element.layout.left"
+  [style.width.px]="element.layout.right - element.layout.left"
+  [style.height.px]="element.layout.bottom - element.layout.top">
+  {{ element.html.text }}
+</div>

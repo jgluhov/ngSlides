@@ -4,6 +4,7 @@ import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { SliderComponent } from './components/slider/slider.component';
 import { SlideSelectorComponent } from './components/slide-selector/slide-selector.component';
 import { FormsModule } from '@angular/forms';
+import { SlideModeComponent } from './components/slide-mode/slide-mode.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -15,7 +16,8 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent,
         SliderComponent,
-        SlideSelectorComponent
+        SlideSelectorComponent,
+        SlideModeComponent
       ],
     }).compileComponents();
   }));

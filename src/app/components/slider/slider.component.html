@@ -1,11 +1,19 @@
-<div *ngIf="presentation">
-  <canvas #canvas
-    [width]="presentation.canvas?.display_width"
-    [height]="presentation.canvas?.display_height">
-  </canvas>
+<div class="slider-container">
+  <div
+    [style.width.px]="presentation?.canvas?.display_width"
+    [style.height.px]="presentation?.canvas?.display_height">
+    <div #container></div>
+  </div>
 
-  <app-slide-selector
-    [slides]="presentation.slides"
-    (changeSlide)="handleChangeSlide($event)">
-  </app-slide-selector>
+  <div class="slider-dashboard">
+    <app-slide-selector
+      [slides]="presentation?.slides"
+      (changeSlide)="handleChangeSlide($event)">
+    </app-slide-selector>
+    <app-slide-mode
+      (changeMode)="handleChangeMode($event)">
+    </app-slide-mode>
+  </div>
+
 </div>
+

@@ -4,6 +4,7 @@ import { SliderComponent } from './slider.component';
 import { SlideSelectorComponent } from '../slide-selector/slide-selector.component';
 import { ISlide } from '../../interfaces/slide';
 import { FormsModule } from '@angular/forms';
+import { SlideModeComponent } from '../slide-mode/slide-mode.component';
 
 describe('SliderComponent', () => {
   let component: SliderComponent;
@@ -16,7 +17,8 @@ describe('SliderComponent', () => {
       ],
       declarations: [
         SliderComponent,
-        SlideSelectorComponent
+        SlideSelectorComponent,
+        SlideModeComponent
       ]
     })
     .compileComponents();
