@@ -1,3 +1,6 @@
-<p>
-  slider works!
-</p>
+<div *ngIf="presentation">
+  <canvas #canvas
+    [width]="presentation.canvas?.display_width"
+    [height]="presentation.canvas?.display_height">
+  </canvas>
+</div>

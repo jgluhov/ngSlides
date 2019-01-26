@@ -6,12 +6,12 @@ import { Component, OnInit, Input, OnChanges, SimpleChanges } from '@angular/cor
   styleUrls: ['./slider.component.scss']
 })
 export class SliderComponent implements OnInit, OnChanges {
-  @Input() compaign;
+  @Input() presentation;
 
   constructor() { }
 
   ngOnChanges(changes: SimpleChanges) {
-    console.log(changes)
+    console.log(changes);
   }
 
   ngOnInit() {

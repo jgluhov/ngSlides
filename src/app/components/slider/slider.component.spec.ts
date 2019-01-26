@@ -16,7 +16,7 @@ describe('SliderComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(SliderComponent);
     component = fixture.componentInstance;
-    component.compaign = {};
+    component.presentation = {};
     fixture.detectChanges();
   });
 
